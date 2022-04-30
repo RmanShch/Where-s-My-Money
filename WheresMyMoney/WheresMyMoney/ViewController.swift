@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Where'sMyMoney
+//  WheresMyMoney
 //
-//  Created by Анна Шербицкая on 29.04.22.
+//  Created by Анна Шербицкая on 30.04.22.
 //
 
 import UIKit
