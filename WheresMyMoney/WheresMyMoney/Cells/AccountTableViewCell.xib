@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="AccountTableViewCell" customModule="WheresMyMoney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-0I-Ic1">
+                        <rect key="frame" x="0.0" y="17" width="70" height="69.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2zK-0I-Ic1" secondAttribute="height" multiplier="1:1" id="TUO-12-fzX"/>
+                            <constraint firstAttribute="width" constant="70" id="Wf3-Em-RLI"/>
+                        </constraints>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="thin"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-Rr-cAd">
+                        <rect key="frame" x="370" y="27" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XVE-Rr-cAd" secondAttribute="height" multiplier="1:1" id="yJE-zC-pga"/>
+                            <constraint firstAttribute="width" constant="50" id="z14-cW-XD1"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title=" ">
+                            <imageReference key="image" image="trash.circle.fill" catalog="system" symbolScale="large"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                            </preferredSymbolConfiguration>
+                            <fontDescription key="titleFontDescription" type="system" weight="ultraLight" pointSize="1"/>
+                            <color key="baseForegroundColor" red="0.5" green="0.15929436694222443" blue="0.13117834694163372" alpha="0.80075538079470199" colorSpace="custom" customColorSpace="displayP3"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9l-17-C3J">
+                        <rect key="frame" x="78" y="51" width="58" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ys-7u-9uZ">
+                        <rect key="frame" x="78" y="17" width="112.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOb-l6-vRN">
+                        <rect key="frame" x="320" y="27" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OOb-l6-vRN" secondAttribute="height" multiplier="1:1" id="0cb-ga-z9w"/>
+                            <constraint firstAttribute="width" constant="50" id="oqX-T9-QQb"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title=" ">
+                            <imageReference key="image" image="pencil.circle.fill" catalog="system" symbolScale="large"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                            </preferredSymbolConfiguration>
+                            <fontDescription key="titleFontDescription" type="system" weight="ultraLight" pointSize="1"/>
+                            <color key="baseForegroundColor" red="0.13569973386012957" green="0.30142559129292923" blue="0.29295565897660697" alpha="0.80391142384105962" colorSpace="custom" customColorSpace="displayP3"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemMintColor"/>
+                <constraints>
+                    <constraint firstItem="g9l-17-C3J" firstAttribute="leading" secondItem="2zK-0I-Ic1" secondAttribute="trailing" constant="8" symbolic="YES" id="09V-om-qUO"/>
+                    <constraint firstItem="XVE-Rr-cAd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="66w-3E-60e"/>
+                    <constraint firstItem="2zK-0I-Ic1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HMU-ZK-grg"/>
+                    <constraint firstItem="0Ys-7u-9uZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="Kmt-Dn-vXJ"/>
+                    <constraint firstAttribute="trailing" secondItem="XVE-Rr-cAd" secondAttribute="trailing" id="Kp7-eB-j9b"/>
+                    <constraint firstItem="2zK-0I-Ic1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TBM-CN-NFQ"/>
+                    <constraint firstItem="g9l-17-C3J" firstAttribute="top" secondItem="0Ys-7u-9uZ" secondAttribute="bottom" constant="10" id="VUa-09-roJ"/>
+                    <constraint firstItem="OOb-l6-vRN" firstAttribute="width" secondItem="OOb-l6-vRN" secondAttribute="height" multiplier="1:1" id="YbS-kF-dwf"/>
+                    <constraint firstItem="XVE-Rr-cAd" firstAttribute="leading" secondItem="OOb-l6-vRN" secondAttribute="trailing" id="c3m-Mv-V6u"/>
+                    <constraint firstItem="OOb-l6-vRN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eb3-fE-Rbs"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g9l-17-C3J" secondAttribute="bottom" constant="10" id="lW2-hg-8lk"/>
+                    <constraint firstItem="0Ys-7u-9uZ" firstAttribute="leading" secondItem="2zK-0I-Ic1" secondAttribute="trailing" constant="8" symbolic="YES" id="y0p-gQ-Cwv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="systemMintColor"/>
+            <connections>
+                <outlet property="amountOfMoneyLabel" destination="g9l-17-C3J" id="d8r-3b-Pn1"/>
+                <outlet property="deleteButton" destination="XVE-Rr-cAd" id="gy7-Hz-3QX"/>
+                <outlet property="editButton" destination="OOb-l6-vRN" id="agE-Ml-Th5"/>
+                <outlet property="iconImageView" destination="2zK-0I-Ic1" id="qLw-pa-82N"/>
+                <outlet property="nameLabel" destination="0Ys-7u-9uZ" id="1BQ-Sg-cuS"/>
+            </connections>
+            <point key="canvasLocation" x="210.1449275362319" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="trash.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

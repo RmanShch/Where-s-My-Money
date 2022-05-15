@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="OperationTableViewCell" customModule="CourseProjectTry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Zm-bZ-gG1">
+                        <rect key="frame" x="20" y="5" width="40" height="39.5"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="IOx-cd-ipE"/>
+                            <constraint firstAttribute="width" secondItem="2Zm-bZ-gG1" secondAttribute="height" multiplier="1:1" id="wEN-67-XbO"/>
+                        </constraints>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="thin"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIS-kU-rrx">
+                        <rect key="frame" x="359" y="5" width="55" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avs-Dy-gA3">
+                        <rect key="frame" x="70" y="10.5" width="55.5" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6b-kp-iEK">
+                        <rect key="frame" x="375" y="25.5" width="39" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="avs-Dy-gA3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="16Q-Lx-JeI"/>
+                    <constraint firstItem="qIS-kU-rrx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1wX-wn-IoT"/>
+                    <constraint firstAttribute="bottom" secondItem="p6b-kp-iEK" secondAttribute="bottom" constant="5" id="CXo-HS-PaX"/>
+                    <constraint firstAttribute="trailing" secondItem="qIS-kU-rrx" secondAttribute="trailing" constant="20" symbolic="YES" id="FDt-Ih-khw"/>
+                    <constraint firstAttribute="trailing" secondItem="p6b-kp-iEK" secondAttribute="trailing" constant="20" symbolic="YES" id="RNq-86-oN6"/>
+                    <constraint firstAttribute="bottom" secondItem="2Zm-bZ-gG1" secondAttribute="bottom" constant="5" id="Ya0-Cm-XqD"/>
+                    <constraint firstItem="avs-Dy-gA3" firstAttribute="leading" secondItem="2Zm-bZ-gG1" secondAttribute="trailing" constant="10" id="qAc-z3-gac"/>
+                    <constraint firstItem="2Zm-bZ-gG1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="wII-PO-jbJ"/>
+                    <constraint firstItem="2Zm-bZ-gG1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yDf-5N-kl1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountOfMoneyLabel" destination="avs-Dy-gA3" id="XLb-Gs-BOY"/>
+                <outlet property="categoryLabel" destination="qIS-kU-rrx" id="fkW-aO-3BL"/>
+                <outlet property="iconImageView" destination="2Zm-bZ-gG1" id="PH9-Lk-DyF"/>
+                <outlet property="timeLabel" destination="p6b-kp-iEK" id="6S8-g4-P7J"/>
+            </connections>
+            <point key="canvasLocation" x="214.49275362318843" y="66.964285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
